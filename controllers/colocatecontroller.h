@@ -1,7 +1,7 @@
 #ifndef COLOCATECONTROLLER_H
 #define COLOCATECONTROLLER_H
 #include "controller.h"
-#include "game.h"
+#include "models/game.h"
 #include "iostream"
 using namespace std;
 

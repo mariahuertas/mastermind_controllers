@@ -2,7 +2,7 @@
 #define STARTCONTROLLER_H
 #include "controller.h"
 #include "colocatecontroller.h"
-#include "game.h"
+#include "models/game.h"
 
 class StartController : public Controller
 {

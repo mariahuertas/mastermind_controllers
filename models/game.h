@@ -2,7 +2,7 @@
 #define GAME_H
 #include "proposedcombination.h"
 #include "secretcombination.h"
-#include "state.h"
+#include "controllers/state.h"
 
 class Game
 {

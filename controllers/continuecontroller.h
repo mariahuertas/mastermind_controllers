@@ -1,6 +1,6 @@
 #ifndef CONTINUECONTROLLER_H
 #define CONTINUECONTROLLER_H
-#include "game.h"
+#include "models/game.h"
 #include "controller.h"
 
 class ContinueController : public Controller
