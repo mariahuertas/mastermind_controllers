@@ -1,7 +1,6 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-
 class Color
 {
 public:
@@ -17,8 +16,8 @@ public:
     bool isColor (char value);
 
 private:
-    Color();
-    ~Color();
+    Color() = default;
+    ~Color() = default;
 };
 
 #endif // COLOR_H

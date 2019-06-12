@@ -7,11 +7,10 @@
 class StartController : public Controller
 {
 public:
-    void control();
     StartController(Game *game);
+    void control() override;
     void generateMisteryColours();
     void printSecretCombination();
-
 };
 
 #endif // STARTCONTROLLER_H

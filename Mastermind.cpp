@@ -1,22 +1,20 @@
 #include "Mastermind.h"
 
 MasterMind::MasterMind(){
-    logic = new Logic();
+    this->logic = new Logic();
 }
 
 MasterMind::~MasterMind(){
-
+    delete this->logic;
 }
 
 void MasterMind::play(){
    Controller *controller;
-
-    cout << "Bienvenido al mastermind. Por cada ronda, ingresa 4 colores"<< endl;
-
+    std::cout << "Welcome. Each round, insert 4 colors"<< std::endl;
     do{
-        controller = logic->getController();
-        if (controller!=NULL){
+        controller = this->logic->getController();
+        if (controller!=nullptr){
             controller->control();
         }
-    } while (controller!=NULL);
+    } while (controller!=nullptr);
 }

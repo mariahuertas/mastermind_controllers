@@ -3,11 +3,10 @@
 #include "models/Game.h"
 #include "Controller.h"
 
-class ContinueController : public Controller
-{
+class ContinueController : public Controller{
 public:
     ContinueController(Game *game);
-    void control();
+    void control() override;
     void clear();
 };
 

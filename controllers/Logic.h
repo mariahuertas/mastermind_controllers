@@ -6,8 +6,7 @@
 #include "controllers/ContinueController.h"
 #include "State.h"
 
-class Logic
-{
+class Logic{
 public:
     Logic();
     Controller *getController();

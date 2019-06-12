@@ -1,16 +1,16 @@
 #include "Combination.h"
 
 Combination::Combination(){
-    colors=4;
-    combination = new char [colors];
+    this->colors=4;
+    this->combination = new char [colors];
 }
 
 Combination::~Combination(){
-    delete[] combination;
+    delete[] this->combination;
 }
 
 char *Combination::getCombination(){
-    return combination;
+    return this->combination;
 }
 
 void Combination::setCombination(char *combination){

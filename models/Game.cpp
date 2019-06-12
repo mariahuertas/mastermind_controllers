@@ -1,23 +1,22 @@
 #include "Game.h"
 
-Game::Game()
-{
+Game::Game(){
     this->state = INITIAL;
-    turn = 0;
-    secretCombination = new SecretCombination();
-    proposedCombination = new ProposedCombination *[MAX_PROPOSED_COMBINATION];
+    this->turn = 0;
+    this->secretCombination = new SecretCombination();
+    this->proposedCombination = new ProposedCombination *[MAX_PROPOSED_COMBINATION];
     for (int i = 0; i< MAX_PROPOSED_COMBINATION; i++){
-       proposedCombination[i]= new ProposedCombination();
+        this->proposedCombination[i]= new ProposedCombination();
     }
 }
 
 Game::~Game(){
-    delete []secretCombination;
-    //delete[]proposedCombination;
+    delete []this->secretCombination;
+    delete []this->proposedCombination;
 }
 
 State Game::getState() {
-    return state;
+    return this->state;
 }
 
 void Game::setState(State state){
@@ -25,39 +24,38 @@ void Game::setState(State state){
 }
 
 void Game:: read() {
-    proposedCombination[getTurn()]->read();
+    this->proposedCombination[getTurn()]->read();
 }
 
 int Game::getTurn(){
-    return turn;
+    return this->turn;
 }
 
 bool Game::isWinner(){
-    return proposedCombination[getTurn()]->isWinner();
+    return this->proposedCombination[getTurn()]->isWinner();
 }
 
 void Game::print(){
-    cout<<endl;
     for (int i=0; i<getTurn()+1; i++)
-    proposedCombination[getTurn()]->print();
+        this->proposedCombination[getTurn()]->print();
 }
 
 void Game::printSecretCombination(){
-    secretCombination->print();
+    this->secretCombination->print();
 }
 
 void Game::incrementTurn(){
-    turn++;
+    this->turn++;
 }
 
 void Game::calculateResult(){
-    proposedCombination[getTurn()]->calculateResult(secretCombination);
+    this->proposedCombination[getTurn()]->calculateResult(this->secretCombination);
 }
 
 void Game::generateMisteryColours(){
-    secretCombination->generateMisteryColours();
+    this->secretCombination->generateMisteryColours();
 }
 
 void Game::clear(){
-    turn=0;
+    this->turn=0;
 }

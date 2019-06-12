@@ -1,12 +1,11 @@
 #ifndef RESULT_H
 #define RESULT_H
 
-
 class Result
 {
 public:
     Result();
-    ~Result();
+    ~Result() = default;
     void incrementWhiteToken();
     void incrementBlackToken();
     int getWhiteToken();

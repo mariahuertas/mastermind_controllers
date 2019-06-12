@@ -4,9 +4,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctype.h>
-#endif
-
-using namespace std;
 
 
 class MasterMind
@@ -19,3 +16,5 @@ public:
 private:
     Logic *logic;
 };
+
+#endif

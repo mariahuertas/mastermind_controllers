@@ -3,13 +3,11 @@
 #include "Controller.h"
 #include "models/Game.h"
 #include "iostream"
-using namespace std;
 
-class ColocateController : public Controller
-{
+class ColocateController : public Controller{
 public:
-    void control();
     ColocateController(Game *game);
+    void control() override;
     bool isWinner();
     void read();
     void calculateResult();

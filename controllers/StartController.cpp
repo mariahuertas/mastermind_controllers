@@ -1,18 +1,15 @@
 #include "StartController.h"
 
-StartController::StartController(Game *game):Controller(game)
-{
-
-}
+StartController::StartController(Game *game):Controller(game){}
 void StartController::printSecretCombination(){
-    return game->printSecretCombination();
+    return this->game->printSecretCombination();
 }
+
 void StartController::generateMisteryColours(){
-    return game->generateMisteryColours();
+    return this->game->generateMisteryColours();
 }
 
 void StartController::control(){
-    //assert
     this->generateMisteryColours();
     this->printSecretCombination();
     this->setState(IN_GAME);

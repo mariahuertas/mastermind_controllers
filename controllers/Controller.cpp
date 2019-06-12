@@ -1,19 +1,11 @@
 #include "Controller.h"
 
 Controller::Controller(Game *game){
-    assert (game != NULL);
+    assert (game != nullptr);
     this->game = game;
 }
 
-Game Controller:: getGame(){
-    return *game;
-}
-
-State Controller::getState(){
-    return game->getState();
-}
 void Controller::setState(State state){
-    //assert
-    return game->setState(state);
+    return this->game->setState(state);
 }
 

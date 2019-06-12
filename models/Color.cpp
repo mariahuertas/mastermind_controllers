@@ -2,12 +2,6 @@
 #include <time.h>
 #include <stdlib.h>
 
-Color::Color(){
-}
-
-Color::~Color(){
-}
-
 int Color::randomEnum(){
     return rand()%6;
 }

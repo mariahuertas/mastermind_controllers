@@ -1,23 +1,20 @@
 #include "ContinueController.h"
 
-ContinueController::ContinueController(Game * game):Controller(game)
-{
-
-}
+ContinueController::ContinueController(Game * game):Controller(game){}
 
 void ContinueController::control(){
-    //assert
-    char respuesta;
+    char choice;
     do{
-    std::cout <<"¿Desea empezar una nueva partida"<<endl;
-    std::cin>>respuesta;
-} while (respuesta != 'Y' &&respuesta != 'y' &&respuesta != 'N' &&respuesta != 'n' );
-    if (respuesta=='Y' || respuesta=='y'){
-    this->clear();
-    this->setState(INITIAL);}
-
-    else this->setState(EXIT);
-
+        std::cout <<"¿Do you want to start a new game?" << std::endl;
+        std::cin>>choice;
+    } while (choice != 'Y' &&choice != 'y' &&choice != 'N' &&choice != 'n' );
+    if (choice=='Y' || choice=='y'){
+        this->clear();
+        this->setState(INITIAL);
+    }
+    else{
+        this->setState(EXIT);
+    }
 }
 
 void ContinueController::clear(){

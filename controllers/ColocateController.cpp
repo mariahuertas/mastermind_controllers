@@ -1,47 +1,44 @@
 #include "ColocateController.h"
 
-ColocateController::ColocateController(Game *game):Controller(game){
-}
+ColocateController::ColocateController(Game *game):Controller(game){}
 
 void ColocateController::control(){
-    //assert
     this->read();
     this->calculateResult();
     this->print();
     if (this->isWinner()){
-        cout << "GANADOR"<<endl;
+        std::cout << "GANADOR" << std::endl;
         this->setState(FINAL);
     }
-
     else if (this->getTurn()==10){
-        cout << "OOOOOOOOH"<< endl;
+        std::cout << "OOOOOOOOH"<< std::endl;
         this->setState(FINAL);
     }
-
-    else
+    else{
         this->incrementTurn();
+    }
 }
-
 
 void ColocateController:: print(){
-    return game->print();
+    return this->game->print();
 }
-void ColocateController:: incrementTurn(){
-    return game->incrementTurn();
+
+void ColocateController::incrementTurn(){
+    return this->game->incrementTurn();
 }
+
 void ColocateController::read(){
-    return game->read();
+    return this->game->read();
 }
 
-void ColocateController:: calculateResult(){
-    return game->calculateResult();
+void ColocateController::calculateResult(){
+    return this->game->calculateResult();
 }
+
 bool ColocateController:: isWinner(){
-    return game->isWinner();
+    return this->game->isWinner();
 }
-
 
 int ColocateController::getTurn(){
-    return game->getTurn();
+    return this->game->getTurn();
 }
-

@@ -1,17 +1,11 @@
 #include "SecretCombination.h"
 
-SecretCombination::SecretCombination():Combination(){
-}
-
-SecretCombination::~SecretCombination(){
-}
-
 void SecretCombination::generateMisteryColours (){
-    char *enumClassArray = new char[colors];
-    char *secretCombination = new char[colors];
+    char *enumClassArray = new char[this->colors];
+    char *secretCombination = new char[this->colors];
     color->values(enumClassArray);
     int j=0;
-    for (int i = 0; i < colors; i++){
+    for (int i = 0; i < this->colors; i++){
         j=color->randomEnum();
         secretCombination[i] = enumClassArray[j];
     }
@@ -19,11 +13,11 @@ void SecretCombination::generateMisteryColours (){
 }
 
 void SecretCombination::print(){
-    char *secretCombination = new char [4];
+    char *secretCombination;
     secretCombination = getCombination();
-    cout<< "Mistery colours: ";
+    std::cout<< "Mistery colours: ";
     for (int i=0; i<4; i++){
-        cout <<  secretCombination[i] <<" ";
+        std::cout <<  secretCombination[i] <<" ";
     }
-    cout<<endl;
+    std::cout<<std::endl;
 }

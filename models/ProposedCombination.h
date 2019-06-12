@@ -7,9 +7,6 @@
 #include "Result.h"
 #include "Combination.h"
 
-
-using namespace std;
-
 class ProposedCombination : public Combination
 {
 public:

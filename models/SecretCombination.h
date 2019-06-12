@@ -4,14 +4,12 @@
 #include <cstdlib>
 #include <ctype.h>
 #include "Combination.h"
-using namespace std;
-
 
 class SecretCombination: public Combination
 {
 public:
-    SecretCombination();
-    ~SecretCombination();
+    SecretCombination() = default;
+    ~SecretCombination() = default;
     void generateMisteryColours ();
     void print();
 };

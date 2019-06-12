@@ -3,17 +3,14 @@
 #include "models/Game.h"
 #include "State.h"
 
-
 class Controller
 {
 public:
+    Controller(Game *game);
+    void setState(State state);
     virtual void control()=0;
 
 protected:
-    Controller(Game *game);
-    State getState();
-    void setState(State state);
-    Game getGame();
     Game *game;
 };
 
