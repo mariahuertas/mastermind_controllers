@@ -1,4 +1,4 @@
-#include "secretcombination.h"
+#include "SecretCombination.h"
 
 SecretCombination::SecretCombination():Combination(){
 }

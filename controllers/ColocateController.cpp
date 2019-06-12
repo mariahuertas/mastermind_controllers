@@ -1,4 +1,4 @@
-#include "colocatecontroller.h"
+#include "ColocateController.h"
 
 ColocateController::ColocateController(Game *game):Controller(game){
 }

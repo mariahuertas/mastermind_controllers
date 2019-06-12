@@ -1,4 +1,4 @@
-#include "controller.h"
+#include "Controller.h"
 
 Controller::Controller(Game *game){
     assert (game != NULL);

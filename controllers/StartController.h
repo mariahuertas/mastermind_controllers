@@ -1,8 +1,8 @@
 #ifndef STARTCONTROLLER_H
 #define STARTCONTROLLER_H
-#include "controller.h"
-#include "colocatecontroller.h"
-#include "models/game.h"
+#include "Controller.h"
+#include "ColocateController.h"
+#include "models/Game.h"
 
 class StartController : public Controller
 {

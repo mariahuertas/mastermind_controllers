@@ -1,7 +1,7 @@
 #ifndef CONTINUECONTROLLER_H
 #define CONTINUECONTROLLER_H
-#include "models/game.h"
-#include "controller.h"
+#include "models/Game.h"
+#include "Controller.h"
 
 class ContinueController : public Controller
 {

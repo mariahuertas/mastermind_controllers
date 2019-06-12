@@ -1,10 +1,10 @@
 #ifndef LOGIC_H
 #define LOGIC_H
-#include "models/game.h"
-#include "controllers/colocatecontroller.h"
-#include "controllers/startcontroller.h"
-#include "controllers/continuecontroller.h"
-#include "state.h"
+#include "models/Game.h"
+#include "controllers/ColocateController.h"
+#include "controllers/StartController.h"
+#include "controllers/ContinueController.h"
+#include "State.h"
 
 class Logic
 {

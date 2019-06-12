@@ -6,29 +6,29 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(mastermind_controllers
-        controllers/colocatecontroller.cpp
-        controllers/colocatecontroller.h
-        models/color.cpp
-        models/color.h
-        models/combination.cpp
-        models/combination.h
-        controllers/continuecontroller.cpp
-        controllers/continuecontroller.h
-        controllers/controller.cpp
-        controllers/controller.h
-        models/game.cpp
-        models/game.h
-        controllers/logic.cpp
-        controllers/logic.h
+        controllers/ColocateController.cpp
+        controllers/ColocateController.h
+        models/Color.cpp
+        models/Color.h
+        models/Combination.cpp
+        models/Combination.h
+        controllers/ContinueController.cpp
+        controllers/ContinueController.h
+        controllers/Controller.cpp
+        controllers/Controller.h
+        models/Game.cpp
+        models/Game.h
+        controllers/Logic.cpp
+        controllers/Logic.h
         main.cpp
-        mastermind.cpp
-        mastermind.h
-        models/proposedcombination.cpp
-        models/proposedcombination.h
-        models/result.cpp
-        models/result.h
-        models/secretcombination.cpp
-        models/secretcombination.h
-        controllers/startcontroller.cpp
-        controllers/startcontroller.h
-        controllers/state.h)
+        Mastermind.cpp
+        Mastermind.h
+        models/ProposedCombination.cpp
+        models/ProposedCombination.h
+        models/Result.cpp
+        models/Result.h
+        models/SecretCombination.cpp
+        models/SecretCombination.h
+        controllers/StartController.cpp
+        controllers/StartController.h
+        controllers/State.h)

@@ -1,7 +1,7 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
-#include "models/game.h"
-#include "state.h"
+#include "models/Game.h"
+#include "State.h"
 
 
 class Controller

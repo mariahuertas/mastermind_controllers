@@ -1,8 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
-#include "proposedcombination.h"
-#include "secretcombination.h"
-#include "controllers/state.h"
+#include "ProposedCombination.h"
+#include "SecretCombination.h"
+#include "controllers/State.h"
 
 class Game
 {
